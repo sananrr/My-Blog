@@ -14,15 +14,15 @@ var swiper = new Swiper(".reviews-content", {
   });
 
     function formData() {
-       let name = document.querySelector('.name');
-       let email = document.querySelector('.email');
-       let message = document.querySelector('.message');
-       let sendBtn = document.querySelector('.send-btn');
+       const name = document.querySelector('.name');
+       const email = document.querySelector('.email');
+       const message = document.querySelector('.message');
+       const sendBtn = document.querySelector('.send-btn');
 
        sendBtn.addEventListener('click', (e) => {
         e.preventDefault();
 
-        let emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+        const emailPattern = /^[a-z0-9]+(\.[a-z0-9]+)*@[a-z]+\.[a-z]+$/;
 
         if (name.value == "" || email.value == "" || message.value == "") {
             emptyerror();
