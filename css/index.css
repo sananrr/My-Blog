@@ -289,3 +289,19 @@ header {
     font-size: 1rem;
     text-align: center;
 }
+
+/* Responsive */
+
+@media (max-width:990px) {
+    .container {
+        margin: 0 auto;
+        width: 90px;
+
+    }
+}
+
+@media (max-width:890px) {
+    section {
+        padding: 2rem 0;
+    }
+}
